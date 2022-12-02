@@ -10,24 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="../../css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/img/favicon/favicon-32x32.png')}}">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <!--Font Awesome css-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="assets/flaticon/flaticon.css">
+    <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
+    <!-- Flaticon CSS -->{asset(){('')}}
+    <link rel="stylesheet" href="{{asset('assets/flaticon/flaticon.css')}}">
     <!--Magnific css-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
     <!--Owl-Carousel css-->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}">
     <!--Animate css-->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
     <!--Site Main Style css-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <!--Responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
     <div class="container">
         <!-- LOGO -->
         <a class="navbar-brand logo" href="index.php">
-            <img src="assets/img/logo.png" alt="nuxa">
+            <img src="{{asset('assets/img/logo.png')}}" alt="nuxa">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
@@ -82,7 +82,7 @@
 <!-- Welcome Area Start -->
 <section class="nuxa-welcome-area fix" data-scroll-index="0">
     <!-- Shape Start -->
-    <img src="assets/img/hero_bg.png" alt="img" class="welcome-shape">
+    <img src="{{asset('assets/img/hero_bg.png')}}" alt="img" class="welcome-shape">
     <!-- Shape End -->
     <div class="container">
         <div class="row align-items-center">
@@ -95,7 +95,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="welcome-image wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-                    <img class="moving1" src="assets/img/hero_img.png" alt="welcome">
+                    <img class="moving1" src="{{asset('assets/img/hero_img.png')}}" alt="welcome">
                 </div>
             </div>
         </div>
@@ -107,10 +107,10 @@
 <section class="nuxa-features-area section_100" data-scroll-index="1">
     <!-- Dot Shape Strat -->
     <div class="shape-l">
-        <img src="assets/img/shape-l.png" alt="shape">
+        <img src="{{asset('assets/img/shape-l.png')}}" alt="shape">
     </div>
     <div class="shape-r">
-        <img src="assets/img/shape-r.png" alt="shape">
+        <img src="{{asset('assets/img/shape-r.png')}}" alt="shape">
     </div>
     <!-- Dot Shape End -->
     <div class="container">
@@ -181,7 +181,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="about-left">
-                    <img src="assets/img/about.png" alt="about" class=" moving2">
+                    <img src="{{asset('assets/img/about.png')}}" alt="about" class=" moving2">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -268,7 +268,7 @@
             </div>
             <div class="col-lg-6 col-sm-5">
                 <div class="choose-right wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-                    <img src="assets/img/choose_img.png" alt="product" class="moving3">
+                    <img src="{{asset('assets/img/choose_img.png')}}" alt="product" class="moving3">
                 </div>
             </div>
         </div>
@@ -290,7 +290,7 @@
             <div class="col-lg-4">
                 <div class="product_item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="product_img">
-                        <img src="assets/img/product_1.png" alt="img">
+                        <img src="{{asset('assets/img/product_1.png')}}" alt="img">
                     </div>
                     <div class="product_text">
                         <h3>Black Watch Pro</h3>
@@ -315,7 +315,7 @@
             <div class="col-lg-4">
                 <div class="product_item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
                     <div class="product_img">
-                        <img src="assets/img/product_2.png" alt="img">
+                        <img src="{{asset('assets/img/product_2.png')}}" alt="img">
                     </div>
                     <div class="product_text">
                         <h3>White Watch Max</h3>
@@ -340,7 +340,7 @@
             <div class="col-lg-4">
                 <div class="product_item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.9s">
                     <div class="product_img">
-                        <img src="assets/img/product_3.png" alt="img">
+                        <img src="{{asset('assets/img/product_3.png')}}" alt="img">
                     </div>
                     <div class="product_text">
                         <h3>Blue Watch Pro</h3>
@@ -373,7 +373,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="faq-right">
-                    <img src="assets/img/faqs.png" alt="faqs">
+                    <img src="{{asset('assets/img/faqs.png')}}" alt="faqs">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -458,7 +458,7 @@
                 <div class="testimonial-slider owl-carousel">
                     <div class="testimonial-item">
                         <div class="client-image">
-                            <img src="assets/img/t3.png" alt="testimonial">
+                            <img src="{{asset('assets/img/t3.png')}}" alt="testimonial">
                         </div>
                         <div class="testimonial-body">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit Lorem sit dix dolor sit. consectetur adipiscing. Nulla mauris dolor, gravida a varius blandit, Lorem ipsum dolor sit Lorem ipsum dolor sit. consectetur adipiscing elit. </p>
@@ -476,7 +476,7 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="client-image">
-                            <img src="assets/img/t1.png" alt="testimonial">
+                            <img src="{{asset('assets/img/t1.png')}}" alt="testimonial">
                         </div>
                         <div class="testimonial-body">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit, Lorem ipsum dolor sit. consectetur adipiscing. Nulla mauris dolor, gravida a varius blandit, Lorem ipsum dolor sit Lorem ipsum dolor sit. consectetur adipiscing elit. </p>
@@ -599,7 +599,7 @@
             <div class="col-md-12">
                 <div class="footer-box">
                     <div class="footer-logo">
-                        <a href="index.html"><img src="assets/img/footer-logo.png" alt="footer logo"></a>
+                        <a href="index.html"><img src="{{asset('assets/img/footer-logo.png')}}" alt="footer logo"></a>
                     </div>
                     <div class="footer-copyright">
                         <p>Copyright &copy; Deveable 2021.</p>
@@ -620,25 +620,25 @@
 <!-- Footer Area End -->
 
 <!--Jquery js-->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="{{asset('assets/js/jquery-3.3.1.min.js')}}"></script>
 <!--Bootstrap js-->
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <!-- Popper JS -->
-<script src="assets/js/popper.min.js"></script>
+<script src="{{asset('assets/js/popper.min.js')}}"></script>
 <!--ScrollIt js-->
-<script src="assets/js/scrollIt.min.js"></script>
+<script src="{{asset('assets/js/scrollIt.min.js')}}"></script>
 <!--Owl-Carousel js-->
-<script src="assets/js/owl.carousel.min.js"></script>
+<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 <!--Magnific js-->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
 <!--Mouse Effect js-->
-<script src="assets/js/mouse-effect.js"></script>
+<script src="{{asset('assets/js/mouse-effect.js')}}"></script>
 <!--Initial js-->
-<script src="assets/js/init.js"></script>
+<script src="{{asset('assets/js/init.js')}}"></script>
 <!--Wow js-->
-<script src="assets/js/wow.min.js"></script>
+<script src="{{asset('assets/js/wow.min.js')}}"></script>
 <!--Main js-->
-<script src="assets/js/main.js"></script>
+<script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 
 </html>
