@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <!--Font Awesome css-->
     <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
-    <!-- Flaticon CSS -->{asset(){('')}}
+    <!-- Flaticon CSS -->
     <link rel="stylesheet" href="{{asset('assets/flaticon/flaticon.css')}}">
     <!--Magnific css-->
     <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
