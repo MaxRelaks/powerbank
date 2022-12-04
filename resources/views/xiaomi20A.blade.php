@@ -95,7 +95,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="welcome-image wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-                    <img class="moving1" src="{{asset('assets/img/hero_img.png')}}" alt="welcome">
+                    <img class="moving1" src="{{asset('assets/img/1-power.png')}}" alt="welcome">
                 </div>
             </div>
         </div>
@@ -181,7 +181,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="about-left">
-                    <img src="{{asset('assets/img/about.png')}}" alt="about" class=" moving2">
+                    <img src="{{asset('assets/img/2-power.png')}}" alt="about" class="moving2, img-min">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -268,7 +268,7 @@
             </div>
             <div class="col-lg-6 col-sm-5">
                 <div class="choose-right wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-                    <img src="{{asset('assets/img/choose_img.png')}}" alt="product" class="moving3">
+                    <img src="{{asset('assets/img/3-power.png')}}" alt="product" class="moving3">
                 </div>
             </div>
         </div>
@@ -373,7 +373,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="faq-right">
-                    <img src="{{asset('assets/img/faqs.png')}}" alt="faqs">
+                    <img src="{{asset('assets/img/4-power.png')}}" alt="faqs">
                 </div>
             </div>
             <div class="col-lg-6">
