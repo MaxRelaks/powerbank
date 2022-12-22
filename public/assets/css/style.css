@@ -67,6 +67,11 @@ img {
     height: auto
 }
 
+.img-logo {
+    max-width: 25%;
+    height: auto
+}
+
 p {
 	font-size: 15px;
 	color: #3a505f;
@@ -615,8 +620,15 @@ nav.fixed .nav-item .nav-link:before {
 	color: #A873CF
 }
 
+.welcome-price {
+    display: inline-block;
+    color: #ff0000;
+    font-size: 26px;
+    margin-left: 30px;
+}
+
 .welcome-text p {
-	font-size: 16px
+	font-size: 26px
 }
 
 .welcome-text .nuxa-btn {
@@ -961,7 +973,7 @@ nav.fixed .nav-item .nav-link:before {
 .faq_accordian_header>a {
 	display: block;
 	text-align: left;
-	padding: 15px 15px 15px 100px;
+	padding: 15px 15px 15px 120px;
 	background: rgba(194, 142, 204, 0.29);
 	font-size: 15px;
 	color: #000;
