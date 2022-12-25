@@ -62,7 +62,7 @@
                     <a href="#" class="nav-link" data-scroll-nav="2">Характеристика</a>
                 </li>
 {{--                <li class="nav-item">--}}
-{{--                    <a href="#" class="nav-link" data-scroll-nav="3">Product</a>--}}
+{{--                    <a href="#" class="nav-link" data-scroll-nav="3">Комплектація</a>--}}
 {{--                </li>--}}
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-scroll-nav="4">Faq</a>
@@ -89,7 +89,9 @@
             <div class="col-12 col-md-6">
                 <div class="welcome-text wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                     <h2>Xiaomi <span>Mi</span> Power Bank 3 20 000 mAh</h2>
-                    <a href="#" class="nuxa-btn">Замовити</a><h2 class="welcome-price"> <span>1800 грн.</span></h2>
+                    <div>
+                        <a href="https://www.olx.ua/d/uk/obyavlenie/umb-xiaomi-mi-power-bank-3-20000-mah-usb-c-18w-IDQzwS5.html?bs=olx_pro_listing&isPreviewActive=0&sliderIndex=0" class="nuxa-btn">Замовити</a><h2 class="welcome-price"> <span>1799 грн.</span></h2>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6">
@@ -609,9 +611,9 @@
                         <p>Надійний партнер під час блекауту</p>
                     </div>
                     <div class="footer-social">
-                        <ul>
-                            <a href="https://www.olx.ua/"><img src="{{asset('assets/img/olx.png')}}" alt="OLX"></a>
-                        </ul>
+{{--                        <ul>--}}
+{{--                            <a href="https://www.olx.ua/"><img src="{{asset('assets/img/olx.png')}}" alt="OLX"></a>--}}
+{{--                        </ul>--}}
                     </div>
                 </div>
             </div>
