@@ -551,11 +551,12 @@
                 <div class="contact-form">
                     <div class="heading-line-two"></div>
                     <div id="notification"></div>
-                    <form id="contact-form">
+                    <form id="contact-form" method="post" action="{{route('feedback')}}">
+                        @csrf
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <p>
-                                    <input class="form-control" type="text" placeholder="Ім'я" name="user_name">
+                                    <input class="form-control" required type="text" placeholder="Ім'я" name="user_name">
                                 </p>
                             </div>
                             <div class="col-12 col-md-6">
@@ -567,7 +568,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <p>
-                                    <input class="form-control" type="email" placeholder="E-mail" name="user_email">
+                                    <input class="form-control" required type="email" placeholder="E-mail" name="user_email">
                                 </p>
                             </div>
                             <div class="col-lg-6">
@@ -579,7 +580,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <p>
-                                    <textarea class="form-control" placeholder="Ваше повідомлення..." name="user_message"></textarea>
+                                    <textarea class="form-control" required placeholder="Ваше повідомлення..." name="user_message"></textarea>
                                 </p>
                             </div>
                         </div>

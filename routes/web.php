@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('xiaomi20A');
-});
+Route::get('/', [\App\Http\Controllers\Controller::class, 'index'])->name('main');
+Route::post('feedback', [\App\Http\Controllers\Controller::class, 'feedback'])->name('feedback');
