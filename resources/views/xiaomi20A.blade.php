@@ -90,7 +90,7 @@
                 <div class="welcome-text wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                     <h2>Xiaomi <span>Mi</span> Power Bank 3 20 000 mAh</h2>
                     <div>
-                        <a href="https://www.olx.ua/d/uk/obyavlenie/umb-xiaomi-mi-power-bank-3-20000-mah-usb-c-18w-IDQzwS5.html?bs=olx_pro_listing&isPreviewActive=0&sliderIndex=0" class="nuxa-btn">Замовити</a><h2 class="welcome-price"> <span>1799 грн.</span></h2>
+                        <a href="https://www.olx.ua/d/uk/obyavlenie/umb-xiaomi-mi-power-bank-3-20000-mah-usb-c-18w-IDQzwS5.html?bs=olx_pro_listing&isPreviewActive=0&sliderIndex=0" class="nuxa-btn">Замовити</a><h2 class="welcome-price"> <span>1499 грн.</span></h2>
                     </div>
                 </div>
             </div>
