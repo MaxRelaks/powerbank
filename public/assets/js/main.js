@@ -6,7 +6,7 @@
 *************************************************************/
 
 /*------------------------------------------------------------------------------------
-    
+
 JS INDEX
 =============
 01 - Testimonial Slider JS
@@ -26,10 +26,10 @@ JS INDEX
     jQuery(document).ready(function ($) {
 
 
-        /* 
+        /*
 		=================================================================
 		01 - Testimonial Slider JS
-		=================================================================	
+		=================================================================
 		*/
 
         $(".testimonial-slider").owlCarousel({
@@ -45,10 +45,10 @@ JS INDEX
             autoplaySpeed: 1200,
             navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
         });
-        /* 
+        /*
 		=================================================================
 		02 - Popup JS
-		=================================================================	
+		=================================================================
 		*/
 
         $('.popup-youtube').magnificPopup({
@@ -60,10 +60,10 @@ JS INDEX
             fixedContentPos: false
         });
 
-        /* 
+        /*
 		=================================================================
 		03 - Mouse Move JS
-		=================================================================	
+		=================================================================
 		*/
         $(document).on("mousemove", function (e) {
             $('.moving1').parallax(50, e);
@@ -71,34 +71,37 @@ JS INDEX
             $('.moving3').parallax(60, e);
         });
 
-        /* 
+        /*
 		=================================================================
 		04 - Email Setup JS
-		=================================================================	
+		=================================================================
 		*/
 
         $("#contact-form").on('submit', function (e) {
             e.preventDefault();
 
             //Get input field values from HTML form
-            var user_name = $("input[name=name]").val();
-            var user_email = $("input[name=email]").val();
-            var user_subject = $("input[name=subject]").val();
-            var user_phone = $("input[name=phone]").val();
-            var user_message = $("textarea[name=message]").val();
+            var user_name = $("input[name=user_name]").val();
+            var user_email = $("input[name=user_email]").val();
+            var user_subject = $("input[name=user_subject]").val();
+            var user_phone = $("input[name=user_phone]").val();
+            var user_message = $("textarea[name=user_message]").val();
+            var csrf_token = $("input[name=csrf_token]").val();
 
             //Data to be sent to server
             var post_data;
             var output;
             post_data = {
+                '_token': csrf_token,
                 'user_name': user_name,
                 'user_email': user_email,
                 'user_subject': user_subject,
-                'user_message': user_message
+                'user_message': user_message,
+                'user_phone': user_phone
             };
 
             //Ajax post data to server
-            $.post('assets/email/contact_form.php', post_data, function (response) {
+            $.post("feedback", post_data, function (response) {
 
                 //Response server message
                 if (response.type == 'error') {

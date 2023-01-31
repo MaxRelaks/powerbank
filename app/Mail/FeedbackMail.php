@@ -11,16 +11,16 @@ class FeedbackMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $message;
+    public $mailData;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($message)
+    public function __construct($mailData)
     {
-        $this->message = $message;
+        $this->mailData = $mailData;
     }
 
     /**
@@ -30,6 +30,6 @@ class FeedbackMail extends Mailable
      */
     public function build()
     {
-        return $this->view('email.main', ['message' => $this->message]);
+        return $this->subject("Mail from posts")->view('email.main');
     }
 }

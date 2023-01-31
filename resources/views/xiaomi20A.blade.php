@@ -584,6 +584,7 @@
                                 </p>
                             </div>
                         </div>
+                        <input class="form-control" hidden type="tel" value="{{ csrf_token() }}" name="csrf_token">
                         <div class="row">
                             <div class="col-lg-12">
                                 <p>

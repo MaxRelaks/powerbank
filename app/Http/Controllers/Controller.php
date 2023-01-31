@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\FeedbackMail;
-use GuzzleHttp\Psr7\Request;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -21,10 +21,17 @@ class Controller extends BaseController
 
     public function feedback(Request $request)
     {
-        $toEmail = "macraen.dev@gmail.com";
+        $toEmail = 'macraen.dev@gmail.com';
         $message = "User_name: ".$request->user_name." | User_subject: ".$request->user_subject." | User_email: ".$request->user_email." | User_phone: ".$request->user_phone." | User_message: ".$request->user_message;
-
-        Mail::to($toEmail)->send(new FeedbackMail($message));
+//        Mail::to($toEmail)->send(new FeedbackMail($message));
+        $mailData = [
+            'user_name' => $request->user_name,
+            'user_subject' => $request->user_subject,
+            'user_email' => $request->user_email,
+            'user_phone' => $request->user_phone,
+            'user_message' => $request->user_message
+        ];
+        Mail::to($toEmail)->send(new FeedbackMail($mailData));
 
         return redirect()
             ->back()
