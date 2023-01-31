@@ -25,11 +25,11 @@ class Controller extends BaseController
         $message = "User_name: ".$request->user_name." | User_subject: ".$request->user_subject." | User_email: ".$request->user_email." | User_phone: ".$request->user_phone." | User_message: ".$request->user_message;
 //        Mail::to($toEmail)->send(new FeedbackMail($message));
         $mailData = [
-            'user_name' => $request->user_name,
-            'user_subject' => $request->user_subject,
-            'user_email' => $request->user_email,
-            'user_phone' => $request->user_phone,
-            'user_message' => $request->user_message
+            'name' => $request->user_name,
+            'subject' => $request->user_subject,
+            'email' => $request->user_email,
+            'phone' => $request->user_phone,
+            'message' => $request->user_message
         ];
         Mail::to($toEmail)->send(new FeedbackMail($mailData));
 
